@@ -1,0 +1,7 @@
+material Default
+tex_diff fiberglass.png
+specular 0.2 1.0 0.2
+shininess 30
+
+collision test_decal_collision.obj
+mesh test_decal.x
