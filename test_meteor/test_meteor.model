@@ -1,0 +1,13 @@
+material whatever
+tex_diff ramjetcraft.png
+tex_glow glowmap.png
+emissive 1.0 1.0 1.0
+diffuse 1.0 1.0 1.0
+specular 1.0 1.0 1.0
+shininess 200
+use_patterns
+
+mesh ramjetcraft_lod3.obj
+mesh landing_gear.x
+
+anim gear_up 0 29
