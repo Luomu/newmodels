@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.64.0 r51026</authoring_tool>
     </contributor>
-    <created>2012-10-06T18:33:03</created>
-    <modified>2012-10-06T18:33:03</modified>
+    <created>2012-10-06T18:42:44</created>
+    <modified>2012-10-06T18:42:44</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -164,6 +164,34 @@
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
         <scale sid="scale">1 1 1</scale>
+      </node>
+      <node id="thruster_nose_001" name="thruster_nose_001" type="NODE">
+        <translate sid="location">-1.320558 7.492645 0.001608238</translate>
+        <rotate sid="rotationZ">0 0 1 90</rotate>
+        <rotate sid="rotationY">0 1 0 -1.20239e-5</rotate>
+        <rotate sid="rotationX">1 0 0 1.22133e-12</rotate>
+        <scale sid="scale">1 1 1</scale>
+      </node>
+      <node id="thruster_nose_002" name="thruster_nose_002" type="NODE">
+        <translate sid="location">1.32056 7.492645 0.001608238</translate>
+        <rotate sid="rotationZ">0 0 1 90</rotate>
+        <rotate sid="rotationY">0 1 0 -1.20239e-5</rotate>
+        <rotate sid="rotationX">1 0 0 1.22133e-12</rotate>
+        <scale sid="scale">1 1 1</scale>
+      </node>
+      <node id="thruster_nose_000" name="thruster_nose_000" type="NODE">
+        <translate sid="location">1.32056 7.492645 -0.4948962</translate>
+        <rotate sid="rotationZ">0 0 1 90</rotate>
+        <rotate sid="rotationY">0 1 0 -1.20239e-5</rotate>
+        <rotate sid="rotationX">1 0 0 1.22133e-12</rotate>
+        <scale sid="scale">-1 1 -1</scale>
+      </node>
+      <node id="thruster_nose_003" name="thruster_nose_003" type="NODE">
+        <translate sid="location">-1.32056 7.492645 -0.4948962</translate>
+        <rotate sid="rotationZ">0 0 1 90</rotate>
+        <rotate sid="rotationY">0 1 0 -1.20239e-5</rotate>
+        <rotate sid="rotationX">1 0 0 1.22133e-12</rotate>
+        <scale sid="scale">-1 1 -1</scale>
       </node>
     </visual_scene>
   </library_visual_scenes>
