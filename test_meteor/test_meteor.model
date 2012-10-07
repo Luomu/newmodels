@@ -17,6 +17,5 @@ mesh test_meteor_low.dae
 lod 1000
 mesh test_meteor.dae
 mesh landing_gear.x
-#mesh meteor_gear.dae
 
 anim gear_up 0 29
