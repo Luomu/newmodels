@@ -1,0 +1,10 @@
+material Material-material
+tex_diff bus.png
+diffuse 0.9 0.9 0.9
+specular 0.6 0.6 0.8
+shininess 200
+
+mesh hull.dae
+mesh gear.dae
+
+anim gear_down 0 10
