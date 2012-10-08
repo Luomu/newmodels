@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.64.0 r51026</authoring_tool>
     </contributor>
-    <created>2012-10-08T10:54:55</created>
-    <modified>2012-10-08T10:54:55</modified>
+    <created>2012-10-08T11:25:34</created>
+    <modified>2012-10-08T11:25:34</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -73,6 +73,20 @@
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 -180</rotate>
         <scale sid="scale">2.320791 2.320791 2.320791</scale>
+      </node>
+      <node id="navlight_red_001" name="navlight_red_001" type="NODE">
+        <translate sid="location">-1.844322 -5.481734 -1.750725</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+      </node>
+      <node id="navlight_red_000" name="navlight_red_000" type="NODE">
+        <translate sid="location">1.84432 -5.481734 -1.750725</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
       </node>
     </visual_scene>
   </library_visual_scenes>
