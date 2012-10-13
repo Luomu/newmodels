@@ -8,4 +8,6 @@ shininess 200
 mesh hull.dae
 mesh gear.dae
 
-anim gear_down 0 10
+#24fps
+anim gear_down 1 10
+anim flapity_flap 11 20

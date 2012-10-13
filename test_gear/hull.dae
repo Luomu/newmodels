@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.64.0 r51026</authoring_tool>
     </contributor>
-    <created>2012-10-08T11:25:34</created>
-    <modified>2012-10-08T11:25:34</modified>
+    <created>2012-10-13T12:11:22</created>
+    <modified>2012-10-13T12:11:22</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -56,7 +56,365 @@
       </mesh>
       <extra><technique profile="MAYA"><double_sided>1</double_sided></technique></extra>
     </geometry>
+    <geometry id="Cube-mesh" name="Cube">
+      <mesh>
+        <source id="Cube-mesh-positions">
+          <float_array id="Cube-mesh-positions-array" count="24">-1.982609 -2.002037 0.00480026 -1.982609 -0.002036809 0.00480026 1.982609 -0.002036809 0.00480026 1.982609 -2.002037 0.00480026 -1.982609 -2.002037 0.1965581 -1.982609 -0.002036809 0.1965581 1.982609 -0.002036809 0.1965581 1.982609 -2.002037 0.1965581</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-mesh-normals">
+          <float_array id="Cube-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-mesh-map-0">
+          <float_array id="Cube-mesh-map-0-array" count="48">0.4093728 0.8207744 0.4093728 0.6705368 0.4093728 0.6705368 0.4093728 0.8207744 0.4093728 0.8207744 0.7072352 0.8207744 0.7072352 0.8207744 0.4093728 0.8207744 0.7072352 0.8207744 0.7072352 0.6705368 0.7072352 0.6705368 0.7072352 0.8207744 0.4093728 0.6705368 0.7072352 0.6705368 0.7072352 0.6705368 0.4093728 0.6705368 0.4093728 0.6705368 0.4093728 0.8207744 0.7072352 0.8207744 0.7072352 0.6705368 0.7072352 0.6705368 0.7072352 0.8207744 0.4093728 0.8207744 0.4093728 0.6705368</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-map-0-array" count="24" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube-mesh-vertices">
+          <input semantic="POSITION" source="#Cube-mesh-positions"/>
+        </vertices>
+        <polylist count="6">
+          <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube-mesh-map-0" offset="2" set="0"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>1 0 0 0 0 1 4 0 2 5 0 3 5 1 4 6 1 5 2 1 6 1 1 7 6 2 8 7 2 9 3 2 10 2 2 11 0 3 12 3 3 13 7 3 14 4 3 15 0 4 16 1 4 17 2 4 18 3 4 19 7 5 20 6 5 21 5 5 22 4 5 23</p>
+        </polylist>
+      </mesh>
+      <extra><technique profile="MAYA"><double_sided>1</double_sided></technique></extra>
+    </geometry>
   </library_geometries>
+  <library_animations>
+    <animation id="MysteryFlap_location_X">
+      <source id="MysteryFlap_location_X-input">
+        <float_array id="MysteryFlap_location_X-input-array" count="2">0.4583333 0.8333333</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_X-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_X-output">
+        <float_array id="MysteryFlap_location_X-output-array" count="2">0 0</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_X-output-array" count="2" stride="1">
+            <param name="X" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_X-interpolation">
+        <Name_array id="MysteryFlap_location_X-interpolation-array" count="2">BEZIER BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_X-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_X-intangent">
+        <float_array id="MysteryFlap_location_X-intangent-array" count="4">0.311929 0 0.686929 0</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_X-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_X-outtangent">
+        <float_array id="MysteryFlap_location_X-outtangent-array" count="4">0.6047376 0 0.9797377 0</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_X-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="MysteryFlap_location_X-sampler">
+        <input semantic="INPUT" source="#MysteryFlap_location_X-input"/>
+        <input semantic="OUTPUT" source="#MysteryFlap_location_X-output"/>
+        <input semantic="INTERPOLATION" source="#MysteryFlap_location_X-interpolation"/>
+        <input semantic="IN_TANGENT" source="#MysteryFlap_location_X-intangent"/>
+        <input semantic="OUT_TANGENT" source="#MysteryFlap_location_X-outtangent"/>
+      </sampler>
+      <channel source="#MysteryFlap_location_X-sampler" target="MysteryFlap/location.X"/>
+    </animation>
+    <animation id="MysteryFlap_location_Y">
+      <source id="MysteryFlap_location_Y-input">
+        <float_array id="MysteryFlap_location_Y-input-array" count="2">0.4583333 0.8333333</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Y-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_Y-output">
+        <float_array id="MysteryFlap_location_Y-output-array" count="2">-3.006221 -3.006221</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Y-output-array" count="2" stride="1">
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_Y-interpolation">
+        <Name_array id="MysteryFlap_location_Y-interpolation-array" count="2">BEZIER BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Y-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_Y-intangent">
+        <float_array id="MysteryFlap_location_Y-intangent-array" count="4">0.311929 -3.006221 0.686929 -3.006221</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Y-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_Y-outtangent">
+        <float_array id="MysteryFlap_location_Y-outtangent-array" count="4">0.6047376 -3.006221 0.9797377 -3.006221</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Y-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="MysteryFlap_location_Y-sampler">
+        <input semantic="INPUT" source="#MysteryFlap_location_Y-input"/>
+        <input semantic="OUTPUT" source="#MysteryFlap_location_Y-output"/>
+        <input semantic="INTERPOLATION" source="#MysteryFlap_location_Y-interpolation"/>
+        <input semantic="IN_TANGENT" source="#MysteryFlap_location_Y-intangent"/>
+        <input semantic="OUT_TANGENT" source="#MysteryFlap_location_Y-outtangent"/>
+      </sampler>
+      <channel source="#MysteryFlap_location_Y-sampler" target="MysteryFlap/location.Y"/>
+    </animation>
+    <animation id="MysteryFlap_location_Z">
+      <source id="MysteryFlap_location_Z-input">
+        <float_array id="MysteryFlap_location_Z-input-array" count="2">0.4583333 0.8333333</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Z-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_Z-output">
+        <float_array id="MysteryFlap_location_Z-output-array" count="2">2.517411 2.517411</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Z-output-array" count="2" stride="1">
+            <param name="Z" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_Z-interpolation">
+        <Name_array id="MysteryFlap_location_Z-interpolation-array" count="2">BEZIER BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Z-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_Z-intangent">
+        <float_array id="MysteryFlap_location_Z-intangent-array" count="4">0.311929 2.517411 0.686929 2.517411</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Z-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_location_Z-outtangent">
+        <float_array id="MysteryFlap_location_Z-outtangent-array" count="4">0.6047376 2.517411 0.9797377 2.517411</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_location_Z-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="MysteryFlap_location_Z-sampler">
+        <input semantic="INPUT" source="#MysteryFlap_location_Z-input"/>
+        <input semantic="OUTPUT" source="#MysteryFlap_location_Z-output"/>
+        <input semantic="INTERPOLATION" source="#MysteryFlap_location_Z-interpolation"/>
+        <input semantic="IN_TANGENT" source="#MysteryFlap_location_Z-intangent"/>
+        <input semantic="OUT_TANGENT" source="#MysteryFlap_location_Z-outtangent"/>
+      </sampler>
+      <channel source="#MysteryFlap_location_Z-sampler" target="MysteryFlap/location.Z"/>
+    </animation>
+    <animation id="MysteryFlap_rotation_euler_X">
+      <source id="MysteryFlap_rotation_euler_X-input">
+        <float_array id="MysteryFlap_rotation_euler_X-input-array" count="2">0.4583333 0.8333333</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_X-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_X-output">
+        <float_array id="MysteryFlap_rotation_euler_X-output-array" count="2">0 -90</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_X-output-array" count="2" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_X-interpolation">
+        <Name_array id="MysteryFlap_rotation_euler_X-interpolation-array" count="2">BEZIER BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_X-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_X-intangent">
+        <float_array id="MysteryFlap_rotation_euler_X-intangent-array" count="4">0.3141092 0 0.6891092 -90</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_X-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_X-outtangent">
+        <float_array id="MysteryFlap_rotation_euler_X-outtangent-array" count="4">0.6025575 0 0.9775575 -90</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_X-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="MysteryFlap_rotation_euler_X-sampler">
+        <input semantic="INPUT" source="#MysteryFlap_rotation_euler_X-input"/>
+        <input semantic="OUTPUT" source="#MysteryFlap_rotation_euler_X-output"/>
+        <input semantic="INTERPOLATION" source="#MysteryFlap_rotation_euler_X-interpolation"/>
+        <input semantic="IN_TANGENT" source="#MysteryFlap_rotation_euler_X-intangent"/>
+        <input semantic="OUT_TANGENT" source="#MysteryFlap_rotation_euler_X-outtangent"/>
+      </sampler>
+      <channel source="#MysteryFlap_rotation_euler_X-sampler" target="MysteryFlap/rotationX.ANGLE"/>
+    </animation>
+    <animation id="MysteryFlap_rotation_euler_Y">
+      <source id="MysteryFlap_rotation_euler_Y-input">
+        <float_array id="MysteryFlap_rotation_euler_Y-input-array" count="2">0.4583333 0.8333333</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Y-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_Y-output">
+        <float_array id="MysteryFlap_rotation_euler_Y-output-array" count="2">0 0</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Y-output-array" count="2" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_Y-interpolation">
+        <Name_array id="MysteryFlap_rotation_euler_Y-interpolation-array" count="2">BEZIER BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Y-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_Y-intangent">
+        <float_array id="MysteryFlap_rotation_euler_Y-intangent-array" count="4">0.311929 0 0.686929 0</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Y-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_Y-outtangent">
+        <float_array id="MysteryFlap_rotation_euler_Y-outtangent-array" count="4">0.6047376 0 0.9797377 0</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Y-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="MysteryFlap_rotation_euler_Y-sampler">
+        <input semantic="INPUT" source="#MysteryFlap_rotation_euler_Y-input"/>
+        <input semantic="OUTPUT" source="#MysteryFlap_rotation_euler_Y-output"/>
+        <input semantic="INTERPOLATION" source="#MysteryFlap_rotation_euler_Y-interpolation"/>
+        <input semantic="IN_TANGENT" source="#MysteryFlap_rotation_euler_Y-intangent"/>
+        <input semantic="OUT_TANGENT" source="#MysteryFlap_rotation_euler_Y-outtangent"/>
+      </sampler>
+      <channel source="#MysteryFlap_rotation_euler_Y-sampler" target="MysteryFlap/rotationY.ANGLE"/>
+    </animation>
+    <animation id="MysteryFlap_rotation_euler_Z">
+      <source id="MysteryFlap_rotation_euler_Z-input">
+        <float_array id="MysteryFlap_rotation_euler_Z-input-array" count="2">0.4583333 0.8333333</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Z-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_Z-output">
+        <float_array id="MysteryFlap_rotation_euler_Z-output-array" count="2">0 0</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Z-output-array" count="2" stride="1">
+            <param name="ANGLE" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_Z-interpolation">
+        <Name_array id="MysteryFlap_rotation_euler_Z-interpolation-array" count="2">BEZIER BEZIER</Name_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Z-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_Z-intangent">
+        <float_array id="MysteryFlap_rotation_euler_Z-intangent-array" count="4">0.311929 0 0.686929 0</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Z-intangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="MysteryFlap_rotation_euler_Z-outtangent">
+        <float_array id="MysteryFlap_rotation_euler_Z-outtangent-array" count="4">0.6047376 0 0.9797377 0</float_array>
+        <technique_common>
+          <accessor source="#MysteryFlap_rotation_euler_Z-outtangent-array" count="2" stride="2">
+            <param name="X" type="float"/>
+            <param name="Y" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="MysteryFlap_rotation_euler_Z-sampler">
+        <input semantic="INPUT" source="#MysteryFlap_rotation_euler_Z-input"/>
+        <input semantic="OUTPUT" source="#MysteryFlap_rotation_euler_Z-output"/>
+        <input semantic="INTERPOLATION" source="#MysteryFlap_rotation_euler_Z-interpolation"/>
+        <input semantic="IN_TANGENT" source="#MysteryFlap_rotation_euler_Z-intangent"/>
+        <input semantic="OUT_TANGENT" source="#MysteryFlap_rotation_euler_Z-outtangent"/>
+      </sampler>
+      <channel source="#MysteryFlap_rotation_euler_Z-sampler" target="MysteryFlap/rotationZ.ANGLE"/>
+    </animation>
+  </library_animations>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Spacebus" name="Spacebus" type="NODE">
@@ -87,6 +445,14 @@
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
         <scale sid="scale">1 1 1</scale>
+      </node>
+      <node id="MysteryFlap" name="MysteryFlap" type="NODE">
+        <translate sid="location">5.64571e-16 -3.006221 2.517411</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">1 1 1</scale>
+        <instance_geometry url="#Cube-mesh"/>
       </node>
     </visual_scene>
   </library_visual_scenes>
