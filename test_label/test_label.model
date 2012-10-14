@@ -1,0 +1,7 @@
+material Default
+tex_diff fiberglass.png
+tex_spec fiberglass_spec.png
+specular 0.2 1.0 0.2
+shininess 30
+
+mesh test_label.dae
