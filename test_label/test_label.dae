@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.64.0 r51026</authoring_tool>
     </contributor>
-    <created>2012-10-14T10:15:31</created>
-    <modified>2012-10-14T10:15:31</modified>
+    <created>2012-10-21T16:35:23</created>
+    <modified>2012-10-21T16:35:23</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -104,35 +104,35 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Cube" name="Cube" type="NODE">
-        <translate sid="location">0 0 2.023566</translate>
+        <translate sid="location">-2.08485e-7 -0.03736162 0.6729171</translate>
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">1 1 1</scale>
+        <scale sid="scale">1.238487 1.238487 1.238487</scale>
         <instance_geometry url="#Cube_002-mesh"/>
       </node>
       <node id="Cylinder" name="Cylinder" type="NODE">
-        <translate sid="location">-1.245457 0.234992 1.084197</translate>
+        <translate sid="location">-1.542483 0.2536728 -0.4904787</translate>
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">1 1 2.056599</scale>
+        <scale sid="scale">1.238487 1.238487 2.547071</scale>
         <instance_geometry url="#Stick-mesh"/>
       </node>
       <node id="Cylinder_001" name="Cylinder_001" type="NODE">
-        <translate sid="location">1.24546 0.234992 1.084197</translate>
+        <translate sid="location">1.542485 0.2536728 -0.4904787</translate>
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">1 1 2.056599</scale>
+        <scale sid="scale">1.238487 1.238487 2.547071</scale>
         <instance_geometry url="#Stick-mesh"/>
       </node>
       <node id="label_something" name="label_something" type="NODE">
-        <translate sid="location">0 -0.1609701 2.049029</translate>
+        <translate sid="location">0 -0.2395112 0.5490286</translate>
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 90</rotate>
-        <scale sid="scale">0.3796175 0.3796175 0.3796175</scale>
+        <scale sid="scale">1 1 1</scale>
       </node>
     </visual_scene>
   </library_visual_scenes>
