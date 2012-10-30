@@ -1,0 +1,19 @@
+material Material-material
+tex_diff fiberglass.png
+specular 0.1 0.1 0.1
+shininess 30
+
+material Transmat-material
+diffuse 1.0 0.0 0.0
+specular 1.0 1.0 1.0
+shininess 50
+emissive 0.8 0.8 0.8
+opacity 50
+
+material Transball-material
+tex_diff fiberglass.png
+specular 1.0 1.0 0.0
+shininess 50
+opacity 50
+
+mesh test_opacity.dae
