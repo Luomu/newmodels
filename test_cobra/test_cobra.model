@@ -3,7 +3,6 @@ material CobraI_body-material
 #tex_diff CobraI_diff.png
 tex_glow CobraI_emit.png
 tex_spec CobraI_spec.png
-emissive 1.0 1.0 1.0
 diffuse 1.0 1.0 1.0
 specular 1.0 1.0 1.0
 shininess 150
