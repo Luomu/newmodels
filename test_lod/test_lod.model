@@ -1,0 +1,23 @@
+#Once again, the .dae exporter mangles material names like this
+material High-material
+diffuse 0.9 0.5 0.5
+specular 0.0
+
+material Medium-material
+diffuse 0.5 0.9 0.5
+specular 0.0
+
+material Low-material
+diffuse 0.5 0.5 0.9
+specular 0.0
+
+#The lods can be defined in ascending or descending order.
+#The highest number does not really matter.
+lod 1000
+mesh high.dae
+
+lod 100
+mesh medium.dae
+
+lod 30
+mesh low.dae
