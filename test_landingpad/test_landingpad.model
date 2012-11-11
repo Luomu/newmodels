@@ -1,0 +1,6 @@
+material Default
+diffuse 1.0 1.0 1.0
+specular 0.3 0.3 0.3
+tex_diff pad.png
+
+mesh test_landingpad.dae
