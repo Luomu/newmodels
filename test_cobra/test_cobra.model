@@ -3,9 +3,10 @@ material CobraI_body-material
 #tex_diff CobraI_diff.png
 tex_glow CobraI_emit.png
 tex_spec CobraI_spec.png
+#tex_norm Cobra_normal.png
 diffuse 1.0 1.0 1.0
-specular 1.0 1.0 1.0
-shininess 150
+specular 0.6 0.6 0.8
+shininess 40
 use_patterns
 
 material Asp_exhaust_face-material
