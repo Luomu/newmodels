@@ -1,0 +1,5 @@
+mesh multiAnim.dae
+
+anim gorg 0 10
+anim zorg 25 40
+anim stretch 60 80

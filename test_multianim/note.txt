@@ -1,0 +1,1 @@
+In 3DS max collada exporter, if "single matrix" option is selected the .dae ends up having multiple animations. This is a bit odd, and not really recommended, but the importer should handle it.
