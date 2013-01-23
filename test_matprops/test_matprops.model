@@ -1,0 +1,26 @@
+#miscellaneous material properties test
+#-alphatest
+#-alpha blending
+#-twosided
+#-unlit flag
+
+material Alphatest-material
+tex_diff 01_Badge.png
+alpha_test
+
+material Unlit-material
+diffuse 1.0 0.0 0.0
+tex_diff 01_Badge.png
+unlit
+
+#note the way this object is lit
+material Twosided-material
+tex_diff 01_Badge.png
+two_sided
+
+#alpha blending using texture
+material Alphablend-material
+tex_diff 01_Badge.png
+opacity 99
+
+mesh test_matprops.dae
